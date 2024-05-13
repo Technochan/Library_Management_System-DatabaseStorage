@@ -12,7 +12,6 @@ public class DatabaseConnection {
     private final String PASSWORD = "admin";
 
     public Connection getConnection() {
-        System.out.println("/nConnection asked");
         if (connection == null) {
             try {
                 connection = DriverManager.getConnection(URL, USERNAME, PASSWORD);
